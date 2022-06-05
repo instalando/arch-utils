@@ -6,7 +6,7 @@ pacstrap -i /mnt base base-devel linux linux-headers grub efibootmgr wget nano n
 genfstab -U /mnt >> /mnt/etc/fstab
 
 # grub ~ mbr
-arch-chroot /mnt grub-install /dev/sda
+arch-chroot /mnt grub-install /dev/sda1
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 
 # Update system
@@ -30,3 +30,7 @@ arch-chroot /mnt locale-gen &&
 arch-chroot /mnt ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime &&
 arch-chroot /mnt timedatectl set-ntp true &&
 arch-chroot /mnt hwclock --systohc
+
+# set defaullt user
+useradd -m archlinux
+usermod -aG wheel,audio,video,storage archlinux
