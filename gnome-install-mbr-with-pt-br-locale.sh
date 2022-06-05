@@ -32,5 +32,5 @@ arch-chroot /mnt timedatectl set-ntp true &&
 arch-chroot /mnt hwclock --systohc
 
 # set defaullt user
-useradd -m archlinux
-usermod -aG wheel,audio,video,storage archlinux
+arch-chroot /mnt useradd -m archlinux
+arch-chroot /mnt usermod -aG wheel,audio,video,storage archlinux
