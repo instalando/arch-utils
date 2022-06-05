@@ -7,8 +7,8 @@ chmod +x install-system-base.sh
 genfstab -U /mnt >> /mnt/etc/fstab
 
 # grub ~ mbr
-chmod +x grub-install.sh
-./grub-install.sh
+chmod +x grub-mbr.sh
+./grub-mbr.sh
 
 # Update system
 arch-chroot /mnt pacman -S reflector --noconfirm
