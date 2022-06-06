@@ -9,9 +9,6 @@ chmod +x scripts/updade-system.sh
 
 ./scripts/install-system-base.sh
 
-# Gen FSTAB
-genfstab -U /mnt >> /mnt/etc/fstab
-
 # grub ~ mbr
 ./grub-mbr.sh
 
