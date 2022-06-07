@@ -10,7 +10,7 @@ chmod +x scripts/updade-system.sh
 ./scripts/install-system-base.sh
 
 # grub ~ mbr
-./grub-mbr.sh
+./scripts/grub-mbr.sh
 
 # Update system
 ./scripts/updade-system.sh
