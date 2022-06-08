@@ -6,3 +6,5 @@ chmod +x ${pwd}*
 
 pacman -D --asdeps $(pacman -Qqe)
 pacman -D --asexplicit base linux linux-firmware
+
+./recovery-pkg.sh
