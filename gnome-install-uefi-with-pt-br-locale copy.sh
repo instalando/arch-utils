@@ -4,7 +4,7 @@ chmod +x ${pwd}scripts/*
 
 ./scripts/install-system-base.sh
 
-# grub ~ mbr
+# grub ~ uefi
 ./scripts/grub-uefi.sh
 
 # Update system
