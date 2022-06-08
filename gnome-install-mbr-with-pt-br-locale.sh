@@ -1,12 +1,5 @@
 #!/bin/bash
 
-chmod +x scripts/install-system-base.sh
-chmod +x scripts/grub-mbr.sh
-chmod +x scripts/install-gnome.sh
-chmod +x scripts/locale-pt-br.sh
-chmod +x scripts/create-default-user.sh
-chmod +x scripts/updade-system.sh
-
 ./scripts/install-system-base.sh
 
 # grub ~ mbr
