@@ -1,0 +1,12 @@
+chrome-gnome-shell
+google-chrome
+ipwebcam-gst-git
+microsoft-edge-stable-bin
+nvidia-470xx-dkms
+nvidia-470xx-settings
+realvnc-vnc-viewer
+teamviewer
+visual-studio-code-bin
+whatsdesk-bin
+xboxdrv
+yay
