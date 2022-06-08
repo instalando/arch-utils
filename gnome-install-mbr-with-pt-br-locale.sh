@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod +x ${pwd}/scripts/*
+
 ./scripts/install-system-base.sh
 
 # grub ~ mbr
