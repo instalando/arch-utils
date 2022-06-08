@@ -5,6 +5,8 @@ chmod +x ${pwd}*
 ./save-pkgs.sh
 
 pacman -Sc --noconfirm
-pacman -R $(pacman -Qq | grep -ve "$(pacman -Qqg base)" -ve "$(pacman -Qqg base-devel)") --noconfirm
+pacman -D --asdeps $(pacman -Qqe)
+pacman -D --asexplicit base base-devel linux linux-headers
+pacman -Qtdq | pacman -Rns - --noconfirm
 
 ./recovery-pkg.sh
