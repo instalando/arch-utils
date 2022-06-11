@@ -13,6 +13,9 @@ chmod +x ${pwd}scripts/*
 # update sudoers
 arch-chroot /mnt "%wheel ALL=(ALL:ALL) ALL" > /mnt/etc/sudoers
 
+# Install GDM
+./scripts/install-gdm.sh
+
 # Install Gnome Base
 ./scripts/install-gnome.sh
 
