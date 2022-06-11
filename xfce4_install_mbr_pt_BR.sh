@@ -13,8 +13,8 @@ chmod +x ${pwd}scripts/*
 # update sudoers
 arch-chroot /mnt "%wheel ALL=(ALL:ALL) ALL" > /mnt/etc/sudoers
 
-# Install lightdm
-./scripts/install-lightdm.sh
+# Install lxdm
+./scripts/install-lxdm.sh
 
 # Install xfce4 Base
 ./scripts/install-xfce4.sh
