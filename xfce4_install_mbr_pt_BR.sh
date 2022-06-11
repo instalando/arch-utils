@@ -24,3 +24,6 @@ arch-chroot /mnt "%wheel ALL=(ALL:ALL) ALL" > /mnt/etc/sudoers
 
 # Set locale pt-br
 ./scripts/locale-pt-br.sh
+
+# Update sudoers
+./scripts/sudoers.sh
